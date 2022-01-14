@@ -15,7 +15,7 @@ builder.Services.AddSwaggerGen(options =>
     {
         Version = "v1",
         Title = "User API",
-        Description = "An ASP.NET Core Web API for managing users",
+        Description = "An ASP.NET Core Web API for managing users while keeping an eye on the weather",
     });
     
     // using System.Reflection;

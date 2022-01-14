@@ -16,6 +16,9 @@ public class WeatherForecastController : ControllerBase
     /// </summary>
     /// <param name="amount">Number of weather forecasts.</param>
     /// <returns>List of weather forecasts</returns>
+    /// <remarks>
+    /// Looking out the window is more reliable than this!
+    /// </remarks>
     [HttpGet(Name = "GetWeatherForecast")]
     public WeatherForecastResponse Get(int amount)
     {
