@@ -14,9 +14,12 @@ public class UserController : ControllerBase
     }
 
     /// <summary>
-    /// Get All Users
+    /// Get All Users.
     /// </summary>
     /// <returns>List of All Users</returns>
+    /// <remarks>
+    /// There is no persistence here, just in-memory.
+    /// </remarks>
     [HttpGet("GetAll")]
     public List<User> GetAll()
     {
@@ -24,7 +27,7 @@ public class UserController : ControllerBase
     }
 
     /// <summary>
-    /// Gets the user record corresponding to the supplied ID
+    /// Gets the user record corresponding to the supplied ID.
     /// </summary>
     /// <param name="id">ID in Guid format</param>
     /// <returns>user record</returns>
@@ -41,7 +44,7 @@ public class UserController : ControllerBase
     }
 
     /// <summary>
-    /// Creates new user from given Parameters
+    /// Creates new user from given Parameters.
     /// </summary>
     /// <param name="username">Username</param>
     /// <param name="email">Email</param>
